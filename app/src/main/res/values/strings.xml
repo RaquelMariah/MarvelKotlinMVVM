@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Marvel App</string>
+
+    <!--    Splash Activity -->
+    <string name="marvel">MARVEL</string>
+
+    <!--    Item character and Item comic -->
+    <string name="tx_item_name">Nome</string>
+    <string name="tv_item_description">O sucesso nasce do querer, da determinação e persistência em se chegar a um objetivo.</string>
+    <string name="text_description_empty">Esse personagem não possui descrição.</string>
+    <string name="comics">Comics</string>
+
+    <!--    Details Character Fragment -->
+    <string name="empty_list_comics">Esse personagem não possui comics</string>
+    <string name="close_dialog">Fechar</string>
+
+    <!--    Search Character Fragment -->
+    <string name="search_hint">Pesquise um personagem</string>
+
+    <!--    Dialog delete -->
+    <string name="dialog_title_text">DELETAR</string>
+    <string name="dialog_message_text">Deseja realmente deletar esse personagem?</string>
+    <string name="dialog_positive_text">Deletar</string>
+    <string name="dialog_negative_text">Cancelar</string>
+
+    <!--    Favorite Character Fragment -->
+    <string name="message_delete_character">Deletado com sucesso!</string>
+    <string name="tv_empty_text">Nada aqui.</string>
+
+    <!--    Menu details -->
+    <string name="favorite">Favoritar</string>
+
+    <!--    Toast messages -->
+    <string name="an_error_occurred">Um erro ocorreu!</string>
+    <string name="saved_successfully">Salvo com sucesso!</string>
+
+</resources>
