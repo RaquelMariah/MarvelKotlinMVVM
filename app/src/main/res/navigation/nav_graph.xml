@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listCharacterFragment">
+
+    <fragment
+        android:id="@+id/detailsCharacterFragment"
+        tools:layout="@layout/fragment_details_character"
+        android:name="raq.lop.io.marvelkotlinmvvm.ui.details.DetailsCharacterFragment"
+        android:label="DetailsCharacterFragment" >
+        <argument
+            android:name="characterid"
+            app:argType="raq.lop.io.marvelkotlinmvvm.data.model.character.CharacterModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteCharacterFragment"
+        tools:layout="@layout/fragment_favorite_character"
+        android:name="raq.lop.io.marvelkotlinmvvm.ui.favorites.FavoriteCharacterFragment"
+        android:label="FavoriteCharacterFragment" >
+        <action
+            android:id="@+id/action_favoriteCharacterFragment_to_detailsCharacterFragment"
+            app:destination="@id/detailsCharacterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listCharacterFragment"
+        tools:layout="@layout/fragment_list_character"
+        android:name="raq.lop.io.marvelkotlinmvvm.ui.base.list.ListCharacterFragment"
+        android:label="ListCharacterFragment" >
+        <action
+            android:id="@+id/action_listCharacterFragment_to_detailsCharacterFragment"
+            app:destination="@id/detailsCharacterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchCharacterFragment"
+        tools:layout="@layout/fragment_search_character"
+        android:name="raq.lop.io.marvelkotlinmvvm.ui.search.SearchCharacterFragment"
+        android:label="SearchCharacterFragment" >
+        <action
+            android:id="@+id/action_searchCharacterFragment_to_detailsCharacterFragment"
+            app:destination="@id/detailsCharacterFragment" />
+    </fragment>
+</navigation>
