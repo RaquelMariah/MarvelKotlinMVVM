@@ -29,3 +29,19 @@ The main difference between the view model and the Presenter in the MVP pattern 
 
 
 ![MVVMPattern](https://user-images.githubusercontent.com/45218570/170117546-13d9313d-4ef1-4086-a193-a373789c3ed1.png)
+
+## Kotlin Flow
+
+In coroutines, a flow is a type that can emit multiple values sequentially, as opposed to suspend functions that return only a single value. For example, you can use a flow to receive live updates from a database.
+
+Flows are built on top of coroutines and can provide multiple values. A flow is conceptually a stream of data that can be computed asynchronously. The emitted values must be of the same type. For example, a Flow<Int> is a flow that emits integer values.
+
+A flow is very similar to an Iterator that produces a sequence of values, but it uses suspend functions to produce and consume values asynchronously. This means, for example, that the flow can safely make a network request to produce the next value without blocking the main thread.
+
+There are three entities involved in streams of data:
+
+A ***producer*** produces data that is added to the stream. Thanks to coroutines, flows can also produce data asynchronously.
+(Optional) ***intermediaries*** can modify each value emitted into the stream or the stream itself.
+A ***consumer*** consumes the values from the stream.
+  
+  <img width="454" alt="flow" src="https://user-images.githubusercontent.com/45218570/170884040-f8822e0e-87dd-4461-9231-d66eac6e83f0.png">
