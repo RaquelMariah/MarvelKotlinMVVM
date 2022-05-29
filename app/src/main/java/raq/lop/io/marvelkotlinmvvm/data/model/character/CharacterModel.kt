@@ -15,5 +15,4 @@ data class CharacterModel (
     @SerializedName("description")
     val description: String = ""
 
-
 ): Serializable
