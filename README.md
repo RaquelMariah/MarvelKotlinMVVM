@@ -41,7 +41,9 @@ A flow is very similar to an Iterator that produces a sequence of values, but it
 There are three entities involved in streams of data:
 
 A ***producer*** produces data that is added to the stream. Thanks to coroutines, flows can also produce data asynchronously.
+
 (Optional) ***intermediaries*** can modify each value emitted into the stream or the stream itself.
+
 A ***consumer*** consumes the values from the stream.
   
   <img width="454" alt="flow" src="https://user-images.githubusercontent.com/45218570/170884040-f8822e0e-87dd-4461-9231-d66eac6e83f0.png">
