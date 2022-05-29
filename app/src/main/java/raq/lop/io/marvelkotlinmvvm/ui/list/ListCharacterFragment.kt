@@ -1,9 +1,8 @@
-package raq.lop.io.marvelkotlinmvvm.ui.base.list
+package raq.lop.io.marvelkotlinmvvm.ui.list
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.ViewModel
 import raq.lop.io.marvelkotlinmvvm.databinding.FragmentListCharacterBinding
 import raq.lop.io.marvelkotlinmvvm.ui.base.BaseFragment
 

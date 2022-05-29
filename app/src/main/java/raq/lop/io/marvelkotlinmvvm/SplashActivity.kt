@@ -2,8 +2,10 @@ package raq.lop.io.marvelkotlinmvvm
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import dagger.hilt.android.AndroidEntryPoint
 import raq.lop.io.marvelkotlinmvvm.databinding.ActivitySplashBinding
 
+@AndroidEntryPoint
 class SplashActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySplashBinding

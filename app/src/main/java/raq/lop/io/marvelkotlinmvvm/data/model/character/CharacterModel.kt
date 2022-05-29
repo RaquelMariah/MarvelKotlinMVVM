@@ -11,6 +11,9 @@ data class CharacterModel (
     @SerializedName("name")
     val name: String,
     @SerializedName("thumbnail")
-    val thumbnail: ThumbnailModel
+    val thumbnail: ThumbnailModel,
+    @SerializedName("description")
+    val description: String = ""
+
 
 ): Serializable

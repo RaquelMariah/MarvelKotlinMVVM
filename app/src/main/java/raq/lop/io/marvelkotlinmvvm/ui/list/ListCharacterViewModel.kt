@@ -1,4 +1,4 @@
-package raq.lop.io.marvelkotlinmvvm.ui.base.list
+package raq.lop.io.marvelkotlinmvvm.ui.list
 
 import androidx.lifecycle.ViewModel
 

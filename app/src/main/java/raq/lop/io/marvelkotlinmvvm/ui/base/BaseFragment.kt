@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModel
 import androidx.viewbinding.ViewBinding
+import dagger.hilt.android.AndroidEntryPoint
 
 abstract class BaseFragment <VB: ViewBinding, VM: ViewModel>: Fragment() {
 
