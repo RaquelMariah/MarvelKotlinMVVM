@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         callViews(binding)
 
+
+
     }
 
     private fun callViews(binding: ActivityMainBinding) {
