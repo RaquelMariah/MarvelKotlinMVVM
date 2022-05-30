@@ -1,10 +1,11 @@
-package raq.lop.io.marvelkotlinmvvm
+package raq.lop.io.marvelkotlinmvvm.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import dagger.hilt.android.AndroidEntryPoint
+import raq.lop.io.marvelkotlinmvvm.R
 import raq.lop.io.marvelkotlinmvvm.databinding.ActivityMainBinding
 
 @AndroidEntryPoint

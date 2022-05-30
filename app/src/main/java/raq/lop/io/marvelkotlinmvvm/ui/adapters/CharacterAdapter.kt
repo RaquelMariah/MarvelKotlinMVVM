@@ -73,4 +73,7 @@ class CharacterAdapter : RecyclerView.Adapter<CharacterAdapter.CharacterViewHold
     }
 
     override fun getItemCount(): Int = characters.size
+    fun getCharacterPosition(position: Int): CharacterModel  {
+        return characters[position]
+    }
 }

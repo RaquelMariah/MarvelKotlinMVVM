@@ -8,6 +8,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.handleCoroutineException
 import kotlinx.coroutines.launch
+import raq.lop.io.marvelkotlinmvvm.data.model.character.CharacterModel
 import raq.lop.io.marvelkotlinmvvm.data.model.character.CharacterModelResponse
 import raq.lop.io.marvelkotlinmvvm.data.model.comic.ComicModelResponse
 import raq.lop.io.marvelkotlinmvvm.repository.MarvelRepository
@@ -50,6 +51,10 @@ class DetailsCharacterViewModel @Inject constructor (
             }
         }
         return ResourceState.Error(response.message(), response.body())
+    }
+
+    fun insert(characterModel: CharacterModel) = viewModelScope.launch {
+        repository.insert(characterModel)
     }
 
 }

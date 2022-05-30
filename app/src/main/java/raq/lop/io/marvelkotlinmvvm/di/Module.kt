@@ -1,14 +1,20 @@
 package raq.lop.io.marvelkotlinmvvm.di
 
+import android.content.Context
+import androidx.room.Database
+import androidx.room.Room
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
+import raq.lop.io.marvelkotlinmvvm.data.local.MarvelDatabase
 import raq.lop.io.marvelkotlinmvvm.data.remote.Service
 import raq.lop.io.marvelkotlinmvvm.util.Consts
 import raq.lop.io.marvelkotlinmvvm.util.Consts.BASE_URL
+import raq.lop.io.marvelkotlinmvvm.util.Consts.DATABASE_NAME
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.create
@@ -22,6 +28,20 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object Module {
+
+    @Singleton
+    @Provides
+    fun provideMarvelDatabase(
+        @ApplicationContext context: Context
+    )= Room.databaseBuilder(
+        context,
+        MarvelDatabase::class.java,
+        DATABASE_NAME
+    ).build()
+
+    @Singleton
+    @Provides
+    fun provideMarvelDao(database: MarvelDatabase) = database.marvelDao()
 
     @Singleton
     @Provides
@@ -67,7 +87,6 @@ object Module {
     fun provideServicesApi(retrofit: Retrofit): Service{
         return retrofit.create(Service::class.java)
     }
-
 
     @Singleton
     @Provides
