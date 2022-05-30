@@ -1,11 +1,14 @@
-package raq.lop.io.marvelkotlinmvvm
+package raq.lop.io.marvelkotlinmvvm.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
+import dagger.hilt.android.AndroidEntryPoint
+import raq.lop.io.marvelkotlinmvvm.R
 import raq.lop.io.marvelkotlinmvvm.databinding.ActivityMainBinding
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var navHostFragment: NavHostFragment
@@ -18,8 +21,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         callViews(binding)
-
-
 
     }
 

@@ -26,7 +26,7 @@
     <fragment
         android:id="@+id/listCharacterFragment"
         tools:layout="@layout/fragment_list_character"
-        android:name="raq.lop.io.marvelkotlinmvvm.ui.base.list.ListCharacterFragment"
+        android:name="raq.lop.io.marvelkotlinmvvm.ui.list.ListCharacterFragment"
         android:label="ListCharacterFragment" >
         <action
             android:id="@+id/action_listCharacterFragment_to_detailsCharacterFragment"

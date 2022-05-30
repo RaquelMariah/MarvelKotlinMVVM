@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".MarvelApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -16,16 +17,17 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
         <activity
-            android:name="raq.lop.io.marvelkotlinmvvm.SplashActivity"
-            android:exported="true" />
-        <activity
-            android:name="raq.lop.io.marvelkotlinmvvm.MainActivity"
-            android:exported="true">
+            android:name="raq.lop.io.marvelkotlinmvvm.ui.activity.SplashActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="raq.lop.io.marvelkotlinmvvm.ui.activity.MainActivity"
+            android:exported="true">
         </activity>
     </application>
 
